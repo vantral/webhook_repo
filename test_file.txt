@@ -3,3 +3,4 @@ yes or no
 yes...
 and now?
 as a process? with env
+and with git config --global --add safe.directory /home/vantral/webhook_repo
