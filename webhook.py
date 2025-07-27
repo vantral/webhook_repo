@@ -33,8 +33,7 @@ def github_webhook():
         abort(403)
 
     # Do the git pull
-    repo_dir = "https://github.com/vantral/webhook_repo"
-    subprocess.run(["git", "-C", repo_dir, "pull"])
+    subprocess.run(["git", "pull"])
 
     return "OK", 200
 
