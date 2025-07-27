@@ -16,6 +16,10 @@ print(GITHUB_SECRET)
 def hello():
     return "Hello from Flask + Gunicorn!"
 
+@app.route('/new')
+def new():
+    return "NEW PAGE"
+
 @app.route("/deploy", methods=["POST"])
 def github_webhook():
     print("deploying....")
