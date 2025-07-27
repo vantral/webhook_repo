@@ -34,7 +34,7 @@ def github_webhook():
 
     # Do the git pull
     subprocess.run(["git", "pull"])
-    subprocess.run(["systemctl", "reload", "myapp"])
+    subprocess.run(["systemctl", "restart", "myapp"])
     return "OK", 200
 
 if __name__ == "__main__":
